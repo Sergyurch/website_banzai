@@ -1,0 +1,107 @@
+main .item-container {
+	width: 100%;
+	background-color: #ffdbb3;
+	border-radius: 5px;
+	padding: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+}
+
+main .item-description {
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	height: 130px;
+	padding: 10px;
+	width: 86%;
+	color: #aa2c0d;
+	margin-right: 5px;
+}
+
+main .item-description img {
+	margin-right: 30px;
+	max-width: 185px;
+}
+
+main .btn-minus {
+	width: 40px;
+	height: 40px;
+	background: url('../images/btn-minus.png');
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+main .btn-plus {
+	width: 40px;
+	height: 40px;
+	background: url('../images/btn-plus.png');
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+main .item-quantity {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 130px;
+}
+
+.item-quantity .quantity {
+	height: 40px;
+	min-width: 40px;
+	border-radius: 5px;
+	color: #ffdbb3;
+	background-color: #ff181f;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+main .order {
+	text-align: right;
+}
+
+main .order a {
+	padding: 15px 25px; 
+    color: #781400;
+    line-height: 40px;
+    font-style: italic;
+    background-color: #ff181f;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffdbb3;
+    text-decoration: none;
+}
+
+main .order a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+	main .item-container {
+		display: block;
+	}
+
+	main .item-description {
+		width: 100%;
+		margin-bottom: 5px;
+	}
+
+	main .item-quantity {
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 500px) {
+    main .item-description {
+    	flex-direction: column;
+    	height: auto;
+    }
+}

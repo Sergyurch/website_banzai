@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Ресторан Банзай</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/rolls.css" rel="stylesheet">
+	<link href="css/busket.css" rel="stylesheet">
+	<link href="favicon.png" rel="shortcut icon" type="image/png">
+</head>
+<body>
+	<div id="container">
+		<header id="header">
+			<section id="info">
+				<section id="sub-info">
+					<nav id="top-menu">
+						<ul>
+							<li><a href="about.html">О компании</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+						</ul>
+					</nav>
+					<section id="basket">
+						<div class="basket-info hide-850px">
+							<div class="basket-text">Ваш заказ:</div>
+							<div class="basket-sum"><span>400</span> р.</div>
+						</div>
+						<div class="order hide-850px"><a href="busket.html">оформить заказ</a></div>
+						<div class="order hide show-850px"><a href="#">&#128722;</a></div>
+					</section>
+				</section>
+				<section id="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Лого"></a>
+					<div class="inner-container">
+						<span>&#8226; Суши &#8226; Роллы &#8226; Доставка &#8226;&#8194;</span><span>тел. <span class="phone">337-111</span></span>
+					</div>
+					<p class="hide show-500px">ВС-ЧТ 10.00-22.00 ПТ-СБ 10.00-02.00</p>
+				</section>
+				<section id="schedule">
+					<div>
+						<p>С воскресенья</p>
+						<p>По четверг</p>
+						<p>10.00 - 22.00</p>
+					</div>
+					<div>
+						<p>С пятницы</p>
+						<p>По субботу</p>
+						<p>10.00 - 02.00</p>
+					</div>
+				</section>
+			</section>
+			<nav id="main-menu">
+				<p class="hide show-500px">Меню</p>
+				<ul>
+					<li><a href="#">Суши</a></li>
+					<li><a href="rolls.html">Роллы</a></li>
+					<li><a href="#">Маки</a></li>
+					<li><a href="#">Стеклянные роллы</a></li>
+					<li><a href="#">Запеченые</a></li>
+					<li><a href="#">Сашими</a></li>
+					<li><a href="#">Сеты</a></li>
+					<li><a href="#">Wok</a></li>
+					<li><a href="#">Напитки</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<main>
+			<h1>КОРЗИНА</h1>
+			<div class="item-container">
+				<div class="item-description">
+					<img src="images/roll-1.png" alt="Роллы">
+					<h2>Мэриро акай маки 115г</h2>
+				</div>
+				<div class="item-quantity">
+					<div class="btn-minus"></div>
+					<div class="quantity">1</div>
+					<div class="btn-plus"></div>
+				</div>
+			</div>
+			<div class="item-container">
+				<div class="item-description">
+					<img src="images/roll-2.png" alt="Роллы">
+					<h2>Калифорния с тобико 116г</h2>
+				</div>
+				<div class="item-quantity">
+					<div class="btn-minus"></div>
+					<div class="quantity">1</div>
+					<div class="btn-plus"></div>
+				</div>
+			</div>
+			<div class="item-container">
+				<div class="item-description">
+					<img src="images/roll-3.png" alt="Роллы">
+					<h2>Сяка капа маки 111г</h2>
+				</div>
+				<div class="item-quantity">
+					<div class="btn-minus"></div>
+					<div class="quantity">1</div>
+					<div class="btn-plus"></div>
+				</div>
+			</div>
+			<div class="order">
+				<a href="#">Оформить заказ</a>
+			</div>
+		</main>
+
+		<footer>
+			<div class="counter"><img src="images/counter.jpg" alt="Счетчик"></div>
+			<nav id="bottom-menu">
+				<ul>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#">Акции</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+				</ul>
+			</nav>
+			<div><a href="#header">ВВЕРХ</a></div>
+		</footer>
+	</div>
+</body>
+<script>
+	let mainMenu = document.getElementById('main-menu');
+	mainMenu.addEventListener('click', function () {
+		mainMenu.classList.toggle('height-470px');
+	});
+</script>
+</html>

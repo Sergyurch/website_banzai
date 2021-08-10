@@ -1,0 +1,72 @@
+main {
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	background: url('../images/bamboo.png') repeat-y;
+	margin-top: 8px;
+	padding-top: 20px;
+	position: relative;
+}
+
+main .contacts {
+	max-width: 585px;
+	margin: 0 auto;
+	background: url('../images/bg-contacts.png');
+	background-size: 100% 100%;
+	padding: 18px 54px;
+	color: #ad300d;
+	position: relative;
+	top: 20px;
+}
+
+main .contacts p {
+	font-size: 15px;
+	margin: 0;
+}
+
+main .contacts p {
+	font-size: 15px;
+}
+
+main .contacts p span {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+main iframe {
+	width: 100%;
+}
+
+main .plate {
+	width: 19vw;
+	height: 19vw;
+	max-width: 185px;
+	max-height: 185px;
+	background: url('../images/plate.png');
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	left: 10px;
+}
+
+main .sticks {
+	width: 12%;
+	height: 73%;
+	background: url('../images/sticks.png');
+	background-size: 100% 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 850px) {
+	main .plate, main .sticks {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	main .contacts {
+		padding: 18px;
+	}
+}
